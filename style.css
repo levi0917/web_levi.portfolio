@@ -1,0 +1,88 @@
+
+body {
+    font-family: initial;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #0f0505;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+}
+
+@media (max-width: 1000px) {
+    header {
+        position: relative;
+        z-index: 1000; /* Change position for mobile */
+        
+    }
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 24px;
+}
+
+section p {
+    font-size: 16px;
+}
+
+.portfolio-item {
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #0a0404;
+    color: #fff;
+}
+
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #040b12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#back-to-top-btn:hover {
+    background-color: #0056b3;
+}
